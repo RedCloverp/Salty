@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Salty Bistro - уютный ресторан с изысканной кухней и винной картой"
+    />
+    <title>Salty Bistro - Ресторан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    `
+    <!-- Шапка сайта -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="logo">Salty Bistro</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Главная</a></li>
+          <li><a href="#about" class="nav-link">О проекте</a></li>
+          <li><a href="#menu" class="nav-link">Меню</a></li>
+          <li><a href="#wine" class="nav-link">Винная карта</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Salty Bistro</h1>
+        <p>
+          Добро пожаловать в мир подлинной греческой кухни! Окунитесь в
+          атмосферу солнечной Эллады с нашими традиционными блюдами,
+          приготовленными по семейным рецептам.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+          <button class="btn btn-outline" id="reserveBtn">
+            Забронировать стол
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- О проекте -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>О нашем ресторане</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Salty — второй проект ресторатора Натальи Семенюк (22BISTRO).</p>
+            <p>
+              Salty как пожелание be salty или stay salty — “оставайся соленым,
+              классным, верным морю ”, отражающее преданность правилам жизни на
+              берегу. Гастрономическую концепцию бистро и ее воплощение поручили
+              Ивану Фомину, а за выпечку отвечает именитый петербургский пекарь
+              Максим Бабич (ФУТУРА, Zoe).
+            </p>
+            <p>
+              Дизайн бистро, рассчитанного на 48 мест, вдохновлен мотивами
+              древней эллинской культуры. В Salty два зала: в первом много
+              света, пекарня и кофейный бар, где можно позавтракать, наслаждаясь
+              свежей выпечкой и спешелти-кофе; во втором камерная атмосфера,
+              шеф-тейбл и приглушенный свет для вечернего сервиса.
+            </p>
+          </div>
+          <div class="about-image"><img src="/public/IMG_3060.jpg" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Меню</h2>
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3>Закуски</h3>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Брускетта с томатами</h4>
+                <p>Хрустящий хлеб с сочными томатами, базиликом и моцареллой</p>
+              </div>
+              <div class="menu-item-price">450₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Тартар из лосося</h4>
+                <p>Свежий лосось с авокадо, каперсами и лимонной заправкой</p>
+              </div>
+              <div class="menu-item-price">890₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Сырная тарелка</h4>
+                <p>Ассорти европейских сыров с медом и орехами</p>
+              </div>
+              <div class="menu-item-price">1200₽</div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h3>Основные блюда</h3>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Стейк Рибай</h4>
+                <p>Мраморная говядина с овощами гриль и соусом демиглас</p>
+              </div>
+              <div class="menu-item-price">2400₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Дорадо в соли</h4>
+                <p>Запеченная рыба с розмарином и лимоном</p>
+              </div>
+              <div class="menu-item-price">1800₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Ризотто с белыми грибами</h4>
+                <p>Кремовое ризотто с трюфельным маслом и пармезаном</p>
+              </div>
+              <div class="menu-item-price">1400₽</div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h3>Десерты</h3>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Тирамису</h4>
+                <p>Классический итальянский десерт с маскарпоне</p>
+              </div>
+              <div class="menu-item-price">520₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Шоколадный фондан</h4>
+                <p>Теплый шоколадный кекс с мороженым</p>
+              </div>
+              <div class="menu-item-price">480₽</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Панна котта</h4>
+                <p>Нежный десерт с ягодным соусом</p>
+              </div>
+              <div class="menu-item-price">420₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Винная карта -->
+    <section id="wine" class="section">
+      <div class="container">
+        <h2>Винная карта</h2>
+        <div class="wine-grid">
+          <div class="wine-item">
+            <h4>Шардоне</h4>
+            <p class="wine-type">Белое сухое</p>
+            <p class="wine-price">от 2800₽</p>
+          </div>
+          <div class="wine-item">
+            <h4>Пино Нуар</h4>
+            <p class="wine-type">Красное сухое</p>
+            <p class="wine-price">от 3200₽</p>
+          </div>
+          <div class="wine-item">
+            <h4>Просекко</h4>
+            <p class="wine-type">Игристое</p>
+            <p class="wine-price">от 2400₽</p>
+          </div>
+          <div class="wine-item">
+            <h4>Каберне Совиньон</h4>
+            <p class="wine-type">Красное сухое</p>
+            <p class="wine-price">от 3800₽</p>
+          </div>
+          <div class="wine-item">
+            <h4>Рислинг</h4>
+            <p class="wine-type">Белое полусухое</p>
+            <p class="wine-price">от 2600₽</p>
+          </div>
+          <div class="wine-item">
+            <h4>Шампанское</h4>
+            <p class="wine-type">Игристое</p>
+            <p class="wine-price">от 4500₽</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="contacts-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h4>Адрес</h4>
+                <p>Миргородская ул., 20<br />Санкт-Петербург, Россия</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <h4>Телефон</h4>
+                <p>+7 (981) 739-20-00</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕒</div>
+              <div class="contact-details">
+                <h4>Время работы</h4>
+                <p>09:00 – 23:00, без выходных</p>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A19ecd665da54c24897447a0f5d7df88e1b106a309b2b62a8241f05ea7d2716f4&amp;
+            source=constructor"
+              frameborder="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a
+      href="https://instagram.com/your_username"
+      target="_blank"
+      class="instagram-link"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+        />
+      </svg>
+    </a>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Salty Bistro. Все права защищены.</p>
+      </div>
+    </footer>
+    <!-- modal-->
+    <div class="modal-overlay close">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Забронировать стол</h3>
+          <button class="modal-close">&times;</button>
+        </div>
+        <form class="reservation-form">
+          <div class="form-group">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Дата *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Время *</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Количество гостей *</label>
+            <select id="guests" name="guests" required>
+              <option value="">Выберите количество</option>
+              <option value="1">1 гость</option>
+              <option value="2">2 гостя</option>
+              <option value="3">3 гостя</option>
+              <option value="4">4 гостя</option>
+              <option value="5">5 гостей</option>
+              <option value="6">6 гостей</option>
+              <option value="7">7 гостей</option>
+              <option value="8">8 гостей</option>
+              <option value="more">Более 8 гостей</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comments">Комментарии</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="3"
+              placeholder="Особые пожелания, аллергии и т.д."
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline modal-cancel">
+              Отмена
+            </button>
+            <button type="submit" class="btn btn-primary">Забронировать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,9 +1,10 @@
 
 import { reservationTable } from './reservation.js'
 
-
-
 window.addEventListener("DOMContentLoaded", () => {
+  // Инициализируем функционал бронирования
+  reservationTable();
+  
   // Плавная прокрутка для навигации
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

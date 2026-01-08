@@ -1,18 +1,15 @@
 export function reservationTable() {
-
+  const modal = document.querySelector('.modal-overlay');
+  
   // Устанавливаем минимальную дату (сегодня)
   const today = new Date().toISOString().split('T')[0];
   document.getElementById('date').setAttribute('min', today);
 
   // Обработчики событий
   const closeModal = () => {
-    modal.style.animation = 'fadeIn 0.3s ease reverse';
-    setTimeout(() => {
-      document.body.removeChild(modal);
-    }, 300);
+    modal.classList.add('close');
+    document.body.style.overflow = '';
   };
-
-
 
   // Обработка отправки формы
   modal.querySelector('.reservation-form').addEventListener('submit', (e) => {
